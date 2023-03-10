@@ -39,7 +39,8 @@ dataChooser.value = "Small data";
 function initialize(data) {
 	let placeholder = document.querySelector("#data-output");
 	let out = "";
-  placeholder.innerHTML = out;
+	console.log("clearing table");
+	placeholder.innerHTML = out;
 	for (let row of data) {
 		out += `<tr>
               <td>${row.id}</td>
@@ -49,6 +50,7 @@ function initialize(data) {
               <td>${row.phone}</td>
             </tr>`;
 	}
+
 	placeholder.innerHTML = out;
 
 	rowCount.innerText = `Number of rows: ${placeholder.rows.length}`;
@@ -57,18 +59,27 @@ function initialize(data) {
 
 let arrowSorts = document.querySelectorAll(".arrow");
 
-for (const arrow of arrowSorts) {
-  let column = arrow.previousSibling;
-	button.addEventListener("click", sortBy(column));
+for (let arrow of arrowSorts) {
+	let column = arrow.previousSibling.wholeText;
+	arrow.addEventListener("click", () => {
+		sortBy(column);
+	});
+}
+
+function sortByProperty(property) {
+	return function (a, b) {
+		if (a[property] > b[property]) return 1;
+		else if (a[property] < b[property]) return -1;
+
+		return 0;
+	};
 }
 
 function sortBy(columnName) {
-  console.log(columnName);
-	jsonData = jsonData.sort((a, b) => {
-		if (a.columnName < b.columnName) {
-			return -1;
-		}
-	});
+	console.log(columnName);
+	console.log(`adding new data sorted by ${columnName}`);
+
+	jsonData = jsonData.sort(sortByProperty(columnName));
 	initialize(jsonData);
 }
 
@@ -98,3 +109,4 @@ class jsonHolder {
 }
 
 // let j = jsonHolder()
+
