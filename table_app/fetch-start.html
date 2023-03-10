@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Fetch data for table</title>
+		<link href="style.css" rel="stylesheet" />
+		<style></style>
+	</head>
+
+	<body>
+		<h1>Fetch data for table</h1>
+
+		<form>
+			<label for="data-size">Choose size of</label>
+			<select id="data-size" name="data-size">
+				<option>Large data</option>
+				<option>Small data</option>
+			</select>
+		</form>
+
+		<h2>Table of data</h2>
+		<h3>Number of rows: 0</h3>
+		<table>
+			<thead>
+				<tr>
+					<th>id<span class="arrow">&#8642</span> 
+						</th>
+					<th>firstName<span class="arrow">&#8642</span> </th>
+					<th>lastName<span class="arrow">&#8642</span> </th>
+					<th>email<span class="arrow">&#8642</span> </th>
+					<th>phone<span class="arrow">&#8642</span> </th>
+				</tr>
+			</thead>
+			<tbody id="data-output"></tbody>
+		</table>
+		<script src='scripts/main.js'></script>
+
+	</body>
+</html>

@@ -1,0 +1,66 @@
+html,
+pre {
+	font-family: sans-serif;
+}
+
+body {
+	width: 75%;
+	margin: 0 auto;
+}
+
+label {
+	width: 200px;
+	margin-right: 33px;
+}
+
+select {
+	width: 350px;
+	padding: 5px;
+}
+
+table {
+	margin: 15px 0;
+	padding: 4px;
+	border: 3px solid rgb(68, 0, 255);
+	border-style: inset;
+	table-layout: fixed;
+	width: 100%; /* must have this set */
+	min-width: 20px;
+	border-spacing: 1px;
+}
+
+td,
+th {
+	border: 2px rgb(24, 121, 12);
+	border-style: dotted;
+}
+
+thead th:nth-child(1) {
+	width: 10%;
+}
+
+thead th:nth-child(2) {
+	width: 20%;
+}
+
+thead th:nth-child(3) {
+	width: 20%;
+}
+
+thead th:nth-child(4) {
+	width: 30%;
+}
+thead th:nth-child(5) {
+	min-width: 230px;
+	width: 20%;
+}
+
+th,
+td {
+	padding: 15px;
+}
+
+span.arrow:hover {
+	color:rgb(24, 121, 12);
+	background-color:gold;
+}
