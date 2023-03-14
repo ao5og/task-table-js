@@ -21,14 +21,22 @@ select {
 table {
 	margin: 15px 0;
 	padding: 4px;
-	border: 3px solid rgb(68, 0, 255);
+	border: 3px solid rgb(24, 121, 12);
 	border-style: inset;
 	table-layout: fixed;
 	width: 100%; /* must have this set */
 	min-width: 20px;
 	border-spacing: 1px;
+	overflow-wrap: break-word;
 }
 
+table tr:nth-child(even) {
+	background-color: #bef2f5;
+}
+
+table th {
+	background-color: rgb(112, 226, 173);
+}
 td,
 th {
 	border: 2px rgb(24, 121, 12);
@@ -60,7 +68,20 @@ td {
 	padding: 15px;
 }
 
+.arrow {
+	font-size: x-large;
+}
 span.arrow:hover {
-	color:rgb(24, 121, 12);
-	background-color:gold;
+	color: rgb(242, 100, 255);
+	cursor: pointer;
+	/* background-color: gold; */
+}
+
+/* table tbody tr {
+	display: none;
+} */
+
+#page-nav {
+	display: flex;
+	justify-content: center;
 }
