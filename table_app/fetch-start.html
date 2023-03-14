@@ -12,30 +12,52 @@
 	<body>
 		<h1>Fetch data for table</h1>
 
-		<form>
+		<div class="container">
+			<label for="data-size">Choose size of data: </label>
+			<button class="data-size" id="small-data">Small data</button>
+			<button class="data-size" id="large-data">Large data</button>
+		</div>
+		<!-- <form>
 			<label for="data-size">Choose size of</label>
 			<select id="data-size" name="data-size">
 				<option>Large data</option>
 				<option>Small data</option>
 			</select>
-		</form>
+		</form> -->
 
 		<h2>Table of data</h2>
 		<h3>Number of rows: 0</h3>
+		<div id="pag-nav">
+			<nav aria-label="pagination"></nav>
+		</div>
 		<table>
 			<thead>
 				<tr>
-					<th>id<span class="arrow">&#8642</span> 
-						</th>
-					<th>firstName<span class="arrow">&#8642</span> </th>
-					<th>lastName<span class="arrow">&#8642</span> </th>
-					<th>email<span class="arrow">&#8642</span> </th>
-					<th>phone<span class="arrow">&#8642</span> </th>
+					<th><span>id</span> <span class="arrow">&#8642;</span></th>
+					<th><span>firstName</span> <span class="arrow">&#8642;</span></th>
+					<th><span>lastName</span> <span class="arrow">&#8642;</span></th>
+					<th><span>email</span> <span class="arrow">&#8642;</span></th>
+					<th><span>phone</span> <span class="arrow">&#8642;</span></th>
 				</tr>
 			</thead>
 			<tbody id="data-output"></tbody>
 		</table>
-		<script src='scripts/main.js'></script>
 
+		<!-- <div class="pagination-container" >
+<nav>
+<ul class="pagination">
+<li data-page="prev" >
+<span>  <span class="sr-only">(current)</span></span>
+</li>
+<li data-page="next" id="prev">
+<span>  <span class="sr-only">(current)</span></span>
+</li>
+</ul>
+</nav>
+</div>
+
+ -->
+
+		<script src="scripts/main.js"></script>
 	</body>
 </html>
