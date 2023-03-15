@@ -1,63 +1,43 @@
 <!DOCTYPE html>
 <html lang="en-us">
-	<head>
-		<meta charset="utf-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Fetch data for table</title>
-		<link href="style.css" rel="stylesheet" />
-		<style></style>
-	</head>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fetch data for table</title>
+    <link href="style.css" rel="stylesheet" />
+    <style></style>
+  </head>
 
-	<body>
-		<h1>Fetch data for table</h1>
+  <body>
+    <h1>Fetch data for table</h1>
 
-		<div class="container">
-			<label for="data-size">Choose size of data: </label>
-			<button class="data-size" id="small-data">Small data</button>
-			<button class="data-size" id="large-data">Large data</button>
-		</div>
-		<!-- <form>
-			<label for="data-size">Choose size of</label>
-			<select id="data-size" name="data-size">
-				<option>Large data</option>
-				<option>Small data</option>
-			</select>
-		</form> -->
+    <div class="container">
+      <label for="data-size">Choose size of data: </label>
+      <button class="data-size" id="small-data">Small data</button>
+      <button class="data-size" id="large-data">Large data</button>
+    </div>
 
-		<h2>Table of data</h2>
-		<h3>Number of rows: 0</h3>
-		<div id="pag-nav">
-			<nav aria-label="pagination"></nav>
-		</div>
-		<table>
-			<thead>
-				<tr>
-					<th><span>id</span> <span class="arrow">&#8642;</span></th>
-					<th><span>firstName</span> <span class="arrow">&#8642;</span></th>
-					<th><span>lastName</span> <span class="arrow">&#8642;</span></th>
-					<th><span>email</span> <span class="arrow">&#8642;</span></th>
-					<th><span>phone</span> <span class="arrow">&#8642;</span></th>
-				</tr>
-			</thead>
-			<tbody id="data-output"></tbody>
-		</table>
+    <h2>Table of data</h2>
+    <h3>Number of rows: 0</h3>
+    <div class="pagination">
+      <span>1</span>
+      <span>2</span>
+      <span>3</span>
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th><span>id</span> <span class="arrow">&#8642;</span></th>
+          <th><span>firstName</span> <span class="arrow">&#8642;</span></th>
+          <th><span>lastName</span> <span class="arrow">&#8642;</span></th>
+          <th><span>email</span> <span class="arrow">&#8642;</span></th>
+          <th><span>phone</span> <span class="arrow">&#8642;</span></th>
+        </tr>
+      </thead>
+      <tbody id="data-output"></tbody>
+    </table>
 
-		<!-- <div class="pagination-container" >
-<nav>
-<ul class="pagination">
-<li data-page="prev" >
-<span>  <span class="sr-only">(current)</span></span>
-</li>
-<li data-page="next" id="prev">
-<span>  <span class="sr-only">(current)</span></span>
-</li>
-</ul>
-</nav>
-</div>
-
- -->
-
-		<script src="scripts/main.js"></script>
-	</body>
+    <script src="scripts/main.js"></script>
+  </body>
 </html>
