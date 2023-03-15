@@ -1,87 +1,108 @@
 html,
 pre {
-	font-family: sans-serif;
+  font-family: sans-serif;
 }
 
 body {
-	width: 75%;
-	margin: 0 auto;
+  width: 75%;
+  margin: 0 auto;
 }
 
 label {
-	width: 200px;
-	margin-right: 33px;
+  width: 200px;
+  margin-right: 33px;
 }
 
 select {
-	width: 350px;
-	padding: 5px;
+  width: 350px;
+  padding: 5px;
 }
 
 table {
-	margin: 15px 0;
-	padding: 4px;
-	border: 3px solid rgb(24, 121, 12);
-	border-style: inset;
-	table-layout: fixed;
-	width: 100%; /* must have this set */
-	min-width: 20px;
-	border-spacing: 1px;
-	overflow-wrap: break-word;
+  margin: 15px 0;
+  padding: 4px;
+  border: 3px solid rgb(24, 121, 12);
+  border-style: inset;
+  table-layout: fixed;
+  width: 100%; /* must have this set */
+  min-width: 20px;
+  border-spacing: 1px;
+  overflow-wrap: break-word;
 }
 
 table tr:nth-child(even) {
-	background-color: #bef2f5;
+  background-color: #bef2f5;
 }
 
 table th {
-	background-color: rgb(112, 226, 173);
+  background-color: rgb(112, 226, 173);
 }
 td,
 th {
-	border: 2px rgb(24, 121, 12);
-	border-style: dotted;
+  border: 2px rgb(24, 121, 12);
+  border-style: dotted;
 }
 
 thead th:nth-child(1) {
-	width: 10%;
+  width: 10%;
 }
 
 thead th:nth-child(2) {
-	width: 20%;
+  width: 20%;
 }
 
 thead th:nth-child(3) {
-	width: 20%;
+  width: 20%;
 }
 
 thead th:nth-child(4) {
-	width: 30%;
+  width: 30%;
 }
 thead th:nth-child(5) {
-	min-width: 230px;
-	width: 20%;
+  min-width: 230px;
+  width: 20%;
 }
 
 th,
 td {
-	padding: 15px;
+  padding: 15px;
 }
 
 .arrow {
-	font-size: x-large;
+  font-size: x-large;
 }
 span.arrow:hover {
-	color: rgb(242, 100, 255);
-	cursor: pointer;
-	/* background-color: gold; */
+  color: rgb(242, 100, 255);
+  cursor: pointer;
+  /* background-color: gold; */
 }
 
-/* table tbody tr {
-	display: none;
-} */
+.pagination {
+  margin: 10px;
+  border-width: 1px;
+  border-color: black;
+  border-style: solid;
+}
 
-#page-nav {
-	display: flex;
-	justify-content: center;
+.pagination span {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  border-width: 1px;
+  border-color: black;
+  border-style: solid;
+  margin: 3px;
+}
+
+/* Style the active/current link */
+.pagination span.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+/* Add a grey background color on mouse-over */
+.pagination span:hover:not(.active) {
+  background-color: #ddd;
 }
